@@ -37,5 +37,5 @@ console.log(typeof b);
 console.log(typeof c);
 let name = prompt("Please enter a name");
 let surname = prompt("Please enter your middle name");
-let age = prompt("Please enter age");
+let age = Number(prompt("Please enter age"));
 console.log("my name "+name+" thanks to my father "+surname+" and my age "+age);
