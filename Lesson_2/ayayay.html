@@ -8,6 +8,7 @@
 <script>
     //Створити масив, наповнити його 10 елементами будь-якого типу, вивести кожен елемент в консоль
     let arr = [];
+
     function laziness(x) {
         for (let i = 0; i < 10; i++) {
             x[i] = Math.round(Math.random() * 100);
@@ -54,7 +55,7 @@
             name: "ivan",
             username: "ivanus",
             password: 4902
-    },
+        },
         user1 = {
             name: "sergey",
             username: "gray",
@@ -101,7 +102,7 @@
             password: 1124
         }]
     for (let i = 0; i < arr2.length; i++) {
-        console.log(arr2[i].password)
+        console.log("user named " + arr2[i].name + " and a pseudonym " + arr2[i].username + " uses a password " + arr2[i].password)
     }
 
 
