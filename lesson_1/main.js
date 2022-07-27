@@ -39,3 +39,4 @@ let name = prompt("Please enter a name");
 let surname = prompt("Please enter your middle name");
 let age = Number(prompt("Please enter age"));
 console.log("my name "+name+" thanks to my father "+surname+" and my age "+age);
+console.log(`${surname}    ${surname}`)

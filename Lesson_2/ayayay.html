@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>I'm sorry, sorry for what?</title>
+</head>
+<body>
+<script>
+    //Створити масив, наповнити його 10 елементами будь-якого типу, вивести кожен елемент в консоль
+    let arr = [];
+    function laziness(x) {
+        for (let i = 0; i < 10; i++) {
+            x[i] = Math.round(Math.random() * 100);
+            console.log(x[i]);
+        }
+    }
+
+    laziness(arr);
+    //- Створити 3 об'єкти які описують книги. Поля об'єкту : title ,pageCount, genre
+    let book0 = {
+        title: "451° Fahrenheit",
+        pageCount: 320,
+        genre: "Prose"
+    }
+    let book1 = {
+        title: "1984",
+        pageCount: 330,
+        genre: ["Fantasy", "Comics and manga", "Prose"]
+    }
+    let book2 = {
+        title: "Master and Margarita",
+        pageCount: 500,
+        genre: ["Children's literature", "School textbooks", "The horrors", "Prose"]
+    }
+    //- Створити 3 об'єкти які описують книги. Поля об'єкту : title ,pageCount, genre, authors. Поле "автори" - масив. Кожен автор має поля name,age
+    let advancedBook0 = Object.assign({}, book0, {
+        author: [{name: "Ray Bradbury"},
+            {age: "(August 22, 1920 — June 5, 2012)"}]
+    });
+    let advancedBook1 = Object.assign({}, book1, {
+        author: [{name: "George Orwell"},
+            {age: "(June 25, 1903 - January 21, 1950)"}]
+    })
+    let advancedBook2 = Object.assign({}, book2, {
+        author: [{name: "Michael Bulgakov"},
+            {age: "(May 15, 1891 - March 10, 1940"}]
+    })
+
+    //console.log(advancedBook0,advancedBook1,advancedBook2);
+
+    //- Створити масив з 10 об'єктами які описують сутніть "користувач". Поля: name, username,password. Вивести в консоль пароль кожного користувача
+    let arr2 = [
+        user0 = {
+            name: "ivan",
+            username: "ivanus",
+            password: 4902
+    },
+        user1 = {
+            name: "sergey",
+            username: "gray",
+            password: 2333
+        },
+        user2 = {
+            name: "nicholas",
+            username: "claus",
+            password: 9483
+        },
+        user3 = {
+            name: "stepan",
+            username: "stepashka",
+            password: 9898
+        },
+        user4 = {
+            name: "stiven",
+            username: "sigal",
+            password: 1111
+        },
+        user5 = {
+            name: "andriy",
+            username: "dron",
+            password: 4432
+        },
+        user6 = {
+            name: "nastya",
+            username: "anastasya",
+            password: 5674
+        },
+        user7 = {
+            name: "sasha",
+            username: "animal",
+            password: 4444
+        },
+        user8 = {
+            name: "white",
+            username: "dark",
+            password: 4902
+        },
+        user9 = {
+            name: "pes",
+            username: "sobaka",
+            password: 1124
+        }]
+    for (let i = 0; i < arr2.length; i++) {
+        console.log(arr2[i].password)
+    }
+
+
+</script>
+</body>
+
+</html>
