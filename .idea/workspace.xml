@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="071b851f-5c09-4f41-9cc8-6eead9b42c1a" name="Changes" comment="було непросто">
-      <change afterPath="$PROJECT_DIR$/Lesson_2/test.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lesson_3/11.html" afterDir="false" />
+    <list default="true" id="071b851f-5c09-4f41-9cc8-6eead9b42c1a" name="Changes" comment="було непросто2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lesson_3/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/Lesson_3/main.html" afterDir="false" />
     </list>
@@ -66,7 +64,8 @@
       <workItem from="1658944128683" duration="1536000" />
       <workItem from="1659133293155" duration="8626000" />
       <workItem from="1659266551087" duration="7364000" />
-      <workItem from="1659295415655" duration="1426000" />
+      <workItem from="1659295415655" duration="1924000" />
+      <workItem from="1659306546472" duration="986000" />
     </task>
     <task id="LOCAL-00001" summary="ф">
       <created>1658493382498</created>
@@ -138,7 +137,21 @@
       <option name="project" value="LOCAL" />
       <updated>1659296059849</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="було непросто2">
+      <created>1659297009378</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1659297009378</updated>
+    </task>
+    <task id="LOCAL-00012" summary="було непросто2">
+      <created>1659297125369</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1659297125369</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,6 +172,7 @@
     <MESSAGE value="ф" />
     <MESSAGE value="1" />
     <MESSAGE value="було непросто" />
-    <option name="LAST_COMMIT_MESSAGE" value="було непросто" />
+    <MESSAGE value="було непросто2" />
+    <option name="LAST_COMMIT_MESSAGE" value="було непросто2" />
   </component>
 </project>
