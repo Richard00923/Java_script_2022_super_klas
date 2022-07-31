@@ -89,7 +89,7 @@
     //         за допомоги  оператора || буде присвоювати змінній х значення "default"  якщо значення змінної х являється falsy (хибноподыбне, тобто кастується до false)
     let x;
     let arr = ['', undefined, Infinity, 2 / 'x',];
-    x = arr[Math.round(Math.random() * arr.length)]
+    x = arr[Math.round(Math.random() * arr.length - 1)]
     console.log(x);
     x = x || "default"
     console.log(x);
@@ -107,60 +107,106 @@
     let a2 = 2;
     let a3 = 3;
     if ((a1 > a2 || a1 > a3) && (a1 < a3 || a1 < a2)) {
-        console.log('a1 winn')
+        console.log('a1 winn and the first number is in the middle ')
     }
     if ((a2 > a1 || a2 > a3) && (a2 < a3 || a2 < a1)) {
-        console.log('a2 winn')
+        console.log('a2 winn ,the first number is not in the middle')
     }
     if ((a3 > a1 || a3 > a2) && (a3 < a1 || a3 < a2)) {
-        console.log('a3 winn')
+        console.log('a3 winn, the first number is not in the middle')
     }
 
-    //
+
     //     - Перепишіть конструкцію if з використанням умовного оператора '?':
     //     let result;
     //     if (a + b < 4) {
     //         result = 'Мало';
     //     } else {
     //         result = 'Багато';
-    //     }
-    //
-    //
+    let result;
+    (a + b < 4) ? result = 'Мало' : result = 'Багато';
+
     //     - Маємо будь яке число від -100 , 0 , +100 потрібно перевірити яким є число: позитивним, негативним або нулем
     //     напишіть це тернарним оператором
-    //
-    //
-    //
-    //
-    //
-    //
-    //
+    let number = Math.round(Math.random() * (100 - (-100)) + 100);
+    number > 0 ? console.log('число позитивне') : number === 0 ? console.log('число є нулем') : console.log("число негативне")
+
+
     //     - У нас є змінна test, якщо дорівнює true, виведіть 'Вірно', інакше виведіть 'Неправильно'.
     //         Перевірте роботу скрипта при test, що дорівнює true, false. Напишіть два варіанти скрипта - з коротким записом(тернаркою)
-    //
+    let test;
+    test ? console.log('Вірно') : console.log('Неправильно')
+    !test ? console.log('Вірно') : console.log('Неправильно')
+
     //     - Використовуючи конструкцію if..else, напишіть код, який запитуватиме: „Яка «офіційна» назва JavaScript?“
     // Якщо користувач вводить «ECMAScript», то показати: «Правильно!», інакше – відобразити: «Не знаєте? ECMAScript!
-    //
-    //
-    //
-    //
-    //
+    let input = prompt('Яка «офіційна» назва JavaScript?');
+    if (input === 'ECMAScript') {
+        console.log('Правильно!')
+    } else {
+        console.log('Не знаєте? ECMAScript!')
+    }
+
+
     //         - У першому під'їзді квартири з 1 до 20. У другому з 21 по 48. У третьому з 49 по 90.
     //     Користувач вводить номер квартири просто в змінні або через prompt('') .
     //         Програма повинна зазначити, в якому під'їзді знаходиться дана квартира.
-    //
-    //
+    let house = Math.round(Math.random() * (-100 - 100) + 100);
+    if (house > 0 && house < 21) {
+        console.log('the user lives in the first entrance')
+    } else if (house > 20 && house < 49) {
+        console.log('the user lives in the second entrance')
+    } else if (house > 48 && house < 91) {
+
+        console.log('the user lives in the third entrance')
+    }
+
+
     //     - Ми маємо змінну number в яку користувач задає числове значення,  якщо змінна рівна 10 вивести повідомлення ВІРНО, якщо змінна не рівна 10 - тоді НЕВІРНО
-    //
-    //
+    let number0=Math.round(Math.random()*10);
+    number0 === 10 ? console.log('ВІРНО') : console.log('НЕВІРНО')
+
     //     - Задача-гра "чи ми йдемо сьогодні в OKTEN на навчання?".
     //         Змінна, яка характеризує температуру. Якщо температура від +10 до +22 вивести повідомлення що ми йдемо ВЧИТИСЯ .
     //         Якщо інша темпаретура, тоді виводимо повідомлення що сидимо вдома і вчимося ОНЛАЙН
-    //
-    //
+    let temp = Math.round(Math.random() * (40 - 1) + 1);
+    temp >= 10 && temp <= 22 ? console.log('ми йдемо ВЧИТИСЯ') : console.log('сидимо вдома і вчимося ОНЛАЙН')
+
+
     //     - За допомогою switch case - реалізувати гру - вікторину, де ми вводимо число від 1 до 5. І взалежності від введеного
     //         числа нам дається приз. (Авто, Мото, Телефон, і т.д ) і якщо число не підходить тоді  вивести Повідомлення - що число не вірне ... .
-    //
+    let a_quiz = +prompt('enter a number from 1 to 5');
+    let x2 = a_quiz >= 1 && a_quiz <= 5 ? true : console.log('досить пустувати')
+    switch (x2 && a_quiz) {
+        case 1: {
+            console.log('У понеділок ви займається адмініструванням і менеджментом.')
+            break
+        }
+        case 2: {
+            console.log('У вівторок думаєте про життя')
+            break
+        }
+        case 3: {
+            console.log('У середу ви зайняті маркетингом і звязками з громадськістю.')
+            break
+        }
+        case 4: {
+            console.log('Четвер спрямований на налагодження та підтримка звязків з бізнес-партнерами.')
+            break
+        }
+        case 5: {
+            console.log('У пятницю відбувається набір нових співробітників і вирішуються загальні організаційні питання.')
+            break
+        }
+        case 6: {
+            console.log('у суботу приведіть себе до ладу,Прочитайте перед сном цікаву книгу. Це набагато корисніше перегляду телевізора або пошуку новин в Інтернеті. Під час читання мозок розслабляється, і людині легше заснути.')
+            break
+        }
+        case 7: {
+            console.log('У неділю Прогулянки на свіжому повітрі')
+            break
+        }
+    }
 
 
 </script>
