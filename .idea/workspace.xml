@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="071b851f-5c09-4f41-9cc8-6eead9b42c1a" name="Changes" comment="було непросто2">
+      <change afterPath="$PROJECT_DIR$/Lesson_4/kakos.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lesson_4/test.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lesson_3/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/Lesson_3/main.html" afterDir="false" />
     </list>
@@ -65,7 +67,9 @@
       <workItem from="1659133293155" duration="8626000" />
       <workItem from="1659266551087" duration="7364000" />
       <workItem from="1659295415655" duration="1924000" />
-      <workItem from="1659306546472" duration="986000" />
+      <workItem from="1659306546472" duration="1067000" />
+      <workItem from="1659308223764" duration="1463000" />
+      <workItem from="1659516975580" duration="10236000" />
     </task>
     <task id="LOCAL-00001" summary="ф">
       <created>1658493382498</created>
@@ -151,7 +155,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659297125369</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="було непросто2">
+      <created>1659307566424</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1659307566424</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
