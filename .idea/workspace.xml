@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="071b851f-5c09-4f41-9cc8-6eead9b42c1a" name="Changes" comment="було непросто4">
-      <change afterPath="$PROJECT_DIR$/lesson_5/42.html" afterDir="false" />
+    <list default="true" id="071b851f-5c09-4f41-9cc8-6eead9b42c1a" name="Changes" comment="було непросто5">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson_5/42.html" beforeDir="false" afterPath="$PROJECT_DIR$/lesson_5/42.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +68,7 @@
       <workItem from="1659306546472" duration="1067000" />
       <workItem from="1659308223764" duration="1463000" />
       <workItem from="1659516975580" duration="10910000" />
-      <workItem from="1659871756101" duration="5264000" />
+      <workItem from="1659871756101" duration="5988000" />
     </task>
     <task id="LOCAL-00001" summary="ф">
       <created>1658493382498</created>
@@ -175,7 +175,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659528109326</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="було непросто5">
+      <created>1659877543530</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1659877543530</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -198,6 +205,7 @@
     <MESSAGE value="було непросто" />
     <MESSAGE value="було непросто2" />
     <MESSAGE value="було непросто4" />
-    <option name="LAST_COMMIT_MESSAGE" value="було непросто4" />
+    <MESSAGE value="було непросто5" />
+    <option name="LAST_COMMIT_MESSAGE" value="було непросто5" />
   </component>
 </project>

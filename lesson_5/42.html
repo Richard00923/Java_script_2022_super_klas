@@ -58,7 +58,7 @@
         }
     }
 
-    // - створити функцію яка приймає масив об'єктів з наступними полями id,name,age , та виводить їх в документ. Для кожного об'єкту окремий блок.
+    // - створити функцію яка приймає масив об'єктів з наступними полями id, name, age, та виводить їх в документ. Для кожного об'єкту окремий блок.
     let sho = [{
         id: 0,
         name: 'vasya',
@@ -78,11 +78,10 @@
     function create_DOM(arr) {
         for (let i = 0; i < arr.length; i++) {
             document.write('<div>')
-            document.write('////////////')
             for (let j = 0; j < 1; j++) {
-                document.write(`<li>${arr[i].id}</li>
-                <li>${arr[i].name}</li>
-                <li>${arr[i].age}</li>`)
+                document.write(`<ul>${arr[i].id}</ul>
+                <ul>${arr[i].name}</ul>
+                <ul>${arr[i].age}</ul>`)
             }
             document.write('</div>')
         }
