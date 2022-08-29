@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link href="main2.css" rel="stylesheet">
+    <link href="main3.css" rel="stylesheet">
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
@@ -15,38 +15,43 @@
         .then(indexFile => indexFile.json())
         .then(posts=>{
             let findPost = posts.find(post => post.id === idPost)
-            function recursion(obj) {
-                let container = document.createElement(`div`)
-                container.classList.add(`container`)
-                for (const [keyName, keyValue] of Object.entries(obj)) {
-                    let divKey = document.createElement(`div`)
-                    let divKeyValue1 = document.createElement(`div`)
-                    divKeyValue1.classList.add(`divKeyValue1`)
-                    let divName = document.createElement(`div`)
-                    divName.classList.add(`divName`)
-                    if (typeof keyValue === "object") {
-                        let divInObj = document.createElement(`div`)
-                        divInObj.innerText = keyName;
-                        divInObj.classList.add(`divOBJ`)
-                        document.body.appendChild(divInObj)
-                        recursion(keyValue)
+            function iterKey (obj,divFather) {
+                for (const [keyName,valueName] of Object.entries(obj)) {
+                    let divForNameValue = document.createElement(`div`)
+                    divForNameValue.classList.add(`key`)
+                    let divForNameKey = document.createElement(`div`)
+                    divForNameValue.classList.add(`key-name`)
+                    divForNameKey.innerText = keyName
+                    let divForValueKey = document.createElement(`div`)
+                    divForValueKey.classList.add(`key-value`)
+                    divForValueKey.innerText = valueName
+                    if (typeof valueName === `object`) {
+                        let divFather2 = document.createElement(`div`)
+                        divFather2.classList.add(`key-father`)
+                        let titleForDivFather2 = document.createElement(`div`)
+                        titleForDivFather2.classList.add(`title-group`)
+                        titleForDivFather2.innerText = keyName
+                        divFather2.appendChild(titleForDivFather2)
+                        divFather.appendChild(divFather2)
+                        iterKey(valueName,divFather2)
                     } else {
-                        divKeyValue1.innerText = `${keyValue}`;
-                        divName.innerText = `${keyName}`
-                        divKey.append(divName, divKeyValue1)
-                        // divKey.style.display = `flex`;
-                        // divKey.style.flexDirection=`column`
-                        // divKey.style.columnGap = `10px`
-                        container.appendChild(divKey)
+
+                        divForNameValue.append(divForNameKey,divForValueKey)
+                        divFather.appendChild(divForNameValue)
                     }
                 }
-                document.body.append(container)
             }
-            recursion(findPost)
+            let userDiv = document.createElement(`div`)
+            userDiv.classList.add(`user`)
+            iterKey(findPost,userDiv)
+            document.body.appendChild(userDiv)
             fetch(`https://jsonplaceholder.typicode.com/posts/${idPost}/comments`)
                 .then(indexFile => indexFile.json())
                 .then(comments=>{
-                    recursion(comments)
+                    let commentsDiv = document.createElement(`div`)
+                    commentsDiv.classList.add(`comments`)
+                    iterKey(comments, commentsDiv)
+                    document.body.appendChild(commentsDiv)
                 })
     })
 

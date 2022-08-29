@@ -20,11 +20,3 @@ color: #0e0000;
     text-align: center;
 
 }
-.container{
-    /*display: flex;*/
-}
-
-.comments {
-    border: 1px solid red;
-    display: flex;
-}
