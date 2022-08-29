@@ -64,6 +64,7 @@
                             let button2 = document.createElement(`a`)
                             button2.innerText = `INFO`
                             button2.classList.add(`a`)
+                            button2.style.textDecoration = `none`
                             button2.href=`post-details.html?${queryString}`
                             button2.onclick = () => {
                                 window.localStorage.setItem(`id`, `${value.id}`)
