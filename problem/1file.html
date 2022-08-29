@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+</body>
+<script>
+  let a1=[`черва`,`дзвунка`,`хреста`,`шіпа`]
+  let a2=[6,7,8,9,10,`valet`,`dama`,`korol`,`tuz`]
+  let a3=[]
+  for (let i = 0; i <=8 ; i++) {
+      for (let j = 0; j < 4; j++) {
+          a3.push({
+              value:a2[i],
+              makr:a1[j]
+          })
+  }}
+  console.log(a3);
+</script>
+</html>

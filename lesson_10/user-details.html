@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="main2.css" rel="stylesheet">
+</head>
+<body>
+<script>
+    // На странице user-details.html:
+    // 4 Вивести всю, без виключення, інформацію про об'єкт user на який клікнули
+    // 5 Додати кнопку "post of current user", при кліку на яку, з'являються title всіх
+    // постів поточного юзера
+    // (для получения постов используйте эндпоинт https://jsonplaceholder.typicode.com/users/USER_ID/posts)
+    //     6 Каждому посту додати кнопку/посилання, при кліку на яку відбувається перехід
+    //     на сторінку post-details.html, котра має детальну інфу про поточний пост.
+     queryString = +location.search.substring(1)
+    console.log(queryString);
+    fetch(`https://jsonplaceholder.typicode.com/users`)
+        .then(indexFile => indexFile.json())
+        .then(users => {
+            let findUser = users.find(user => user.id === queryString)
+            function recursion(obj) {
+                for (const [keyName, keyValue] of Object.entries(obj)) {
+                    let divKey = document.createElement(`div`)
+                    let divKeyValue1 = document.createElement(`div`)
+                    divKeyValue1.classList.add(`divKeyValue1`)
+                    let divName = document.createElement(`div`)
+                    divName.classList.add(`divName`)
+
+                    if (typeof keyValue === "object") {
+                        let divInObj = document.createElement(`div`)
+                        divInObj.innerText = keyName;
+                        divInObj.classList.add(`divOBJ`)
+                        document.body.appendChild(divInObj)
+                        recursion(keyValue)
+                    } else {
+                        divKeyValue1.innerText = `${keyValue}`;
+                        divName.innerText = `${keyName}`
+                        divKey.append(divName, divKeyValue1)
+                        divKey.style.display = `flex`;
+                        divKey.style.columnGap = `10px`
+                        document.body.append(divKey)
+                    }
+                }
+            }
+
+            recursion(findUser)
+        })
+    let button=document.createElement(`button`)
+    button.classList.add(`butt`)
+    button.innerText=`More post`;
+    button.onclick=()=>{
+        fetch(`https://jsonplaceholder.typicode.com/users/${queryString}/posts`)
+            .then(indexFile => indexFile.json())
+             .then(posts => {
+                 let number=1;
+                 console.log()
+                 let post=posts.forEach(value=>{
+                     console.log(posts.id)
+                     let divAll = document.createElement(`div`)
+                     divAll.style.display=`flex`;
+                     let divPost= document.createElement(`div`)
+                     let button2 = document.createElement(`button`)
+                     button2.innerText=`INFO`
+                     button2.onclick=()=>{
+                         window.localStorage.setItem(`id`,`${value.id}`)
+                     }
+                     divPost.innerText=`POST#${number++} ${value.title}`;
+                     divAll.append(divPost,button2)
+                     document.body.appendChild(divAll)
+                 })
+             })}
+
+    document.body.append(button)
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>d</title>
+</head>
+<body>
+<script>
+
+  function recursion(obj){
+    for (let [keyName,keyValue] of Object.entries(obj)) {
+      let divKey=document.createElement(`div`)
+      let divKeyValue1=document.createElement(`div`)
+      divKeyValue1.innerText=`${keyValue}`;
+      let divName=document.createElement(`div`)
+        divName.innerText=`${keyName}=`
+        divKey.append(divName,divKeyValue1)
+        divKey.style.display=`flex`;
+      divKey.style.columnGap=`10px`
+        document.body.append(divKey)
+    }
+  }
+  recursion()
+
+</script>
+</body>
+</html>

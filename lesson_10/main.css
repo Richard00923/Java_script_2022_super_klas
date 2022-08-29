@@ -1,0 +1,21 @@
+body{
+    display: flex;
+    row-gap: 5px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.container{
+    border: solid red 2px;
+    display: flex;
+    column-gap: 10px;
+    width: 30%;
+
+}
+.link{
+    margin: 2px;
+    width: 10%;
+    background: #00c9ff;
+    color: #002aff;
+    text-align: center;
+}

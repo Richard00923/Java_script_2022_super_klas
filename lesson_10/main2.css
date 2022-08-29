@@ -1,0 +1,17 @@
+.divName{
+ font-weight: bold;
+color: #0e0000;
+}
+.divKeyValue1{
+    font-weight: lighter;
+    color: #2d0000;
+}
+.divOBJ{
+    margin-left:30px ;
+    font-weight: bold;
+    color: #0e0000;
+}
+.butt{
+    position: absolute;
+    margin-top: 330px;
+}
